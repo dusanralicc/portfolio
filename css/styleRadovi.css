@@ -1,0 +1,47 @@
+body {
+	background-color: black;
+	font-family: Helvetica, sans-serif;
+	
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.uslugeWrapper {
+	font-size: 27px;
+	padding: 20px 0px;
+}
+
+.uslugeWrapper img {
+	width: 450px;
+}
+
+.radoviTitle {
+	color: white;
+}
+.radoviSlike {
+	
+	justify-content: center;
+}
+
+#links {
+	left: 91%;
+	position: absolute;
+}
+#links > ul {
+	list-style-type: none;
+}
+
+#links > ul > li {
+	padding: 6px 0px;
+}
+#links > ul > li > a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+#links > ul > li > a:hover {
+	text-decoration: underline;
+}
