@@ -1,47 +1,93 @@
 body {
 	background-color: black;
 	font-family: Helvetica, sans-serif;
-	
 }
 
-.wrapper {
-	display: flex;
-	flex-direction: column;
-}
 
 .uslugeWrapper {
-	font-size: 27px;
-	padding: 20px 0px;
+	width: 100%;
 }
-
-.uslugeWrapper img {
-	width: 450px;
-}
-
 .radoviTitle {
 	color: white;
-}
-.radoviSlike {
 	
-	justify-content: center;
+    text-transform: uppercase;
+	font-size: 18px;
+	padding-bottom: 3px;
 }
 
-#links {
-	left: 91%;
-	position: absolute;
+.radoviWrapper img {
+	width: 350px;
 }
-#links > ul {
-	list-style-type: none;
+.uslugeWrapper {
+	padding-top: 15px;
 }
 
-#links > ul > li {
-	padding: 6px 0px;
-}
-#links > ul > li > a {
-	text-decoration: none;
-	text-transform: uppercase;
+.lightboxWrapper {
+	display: none;
+  	position: fixed;
+  	z-index: 1;
+  	padding-top: 50px;
+  	left: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow: auto;
+  	background-color: rgba(0, 0, 0, .9);
 	color: white;
 }
-#links > ul > li > a:hover {
-	text-decoration: underline;
+
+#lightboxContent {
+	position: relative;
+  	background-color: black;
+  	margin: auto;
+  	padding: 0;
+  	width: 92%;
+  	max-width: 1300px;
+}
+#lightboxContent img {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.spanWrapper {
+	text-align: right;
+	padding-right: 90px;
+	
+}
+.spanWrapper span {
+	font-size: 50px;
+	cursor: pointer;
+}
+#prev, #next {
+	position: absolute;
+	cursor: pointer;
+	margin-top: -23%;
+	padding: 9px;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, .8);
+}
+#next {
+	right: 13%;
+	
+}
+#prev {
+	left: 13%;
+}
+
+.activeSlide {
+	display: none;
+}
+
+.projectInfo {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 0px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-size: 18px;
+	display: none;
 }
